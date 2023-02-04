@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="21.121" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Etsy website title verification" name="Title Verification" time="15.485">
+<system-out><![CDATA[
+Given User is on Etsy home page.............................................passed
+Then User sees title is "Etsy - Shop for handmade, vintage, custom, and unique gifts for everyone".passed
+]]></system-out>
+</testcase>
+<testcase classname="Etsy website title verification" name="Etsy Search Functionality Title Verification" time="5.438">
+<system-out><![CDATA[
+Given User is on Etsy home page.............................................passed
+Then User types "Wooden Spoon" in the search box............................passed
+And User clicks search button...............................................passed
+Then User sees "Wooden spoon" is in the title...............................passed
+]]></system-out>
+</testcase>
+</testsuite>

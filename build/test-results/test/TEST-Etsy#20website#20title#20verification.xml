@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Etsy website title verification" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-04T23:18:50" hostname="GENTI-WORKSTATI" time="21.021">
+  <properties/>
+  <testcase name="Title Verification" classname="Etsy website title verification" time="15.577"/>
+  <testcase name="Etsy Search Functionality Title Verification" classname="Etsy website title verification" time="5.444"/>
+  <system-out><![CDATA[
+@smoke
+Scenario: Title Verification                                                                         ?[90m# src/test/resources/features/eatsy.feature:12?[0m
+Browser: chrome
+  ?[32mGiven ?[0m?[32mUser is on Etsy home page?[0m                                                                    ?[90m# stepDef.EtsyTitleVerification_StepDefinitions.user_is_on_etsy_home_page()?[0m
+  ?[32mThen ?[0m?[32mUser sees title is ?[0m?[32m?[1m"Etsy - Shop for handmade, vintage, custom, and unique gifts for everyone"?[0m ?[90m# stepDef.EtsyTitleVerification_StepDefinitions.user_sees_title_is(java.lang.String)?[0m
+
+@smoke
+Scenario: Etsy Search Functionality Title Verification ?[90m# src/test/resources/features/eatsy.feature:16?[0m
+  ?[32mGiven ?[0m?[32mUser is on Etsy home page?[0m                      ?[90m# stepDef.EtsyTitleVerification_StepDefinitions.user_is_on_etsy_home_page()?[0m
+  ?[32mThen ?[0m?[32mUser types ?[0m?[32m?[1m"Wooden Spoon"?[0m?[32m in the search box?[0m     ?[90m# stepDef.EtsyTitleVerification_StepDefinitions.user_types_in_the_search_box(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mUser clicks search button?[0m                        ?[90m# stepDef.EtsyTitleVerification_StepDefinitions.user_clicks_search_button()?[0m
+  ?[32mThen ?[0m?[32mUser sees ?[0m?[32m?[1m"Wooden spoon"?[0m?[32m is in the title?[0m        ?[90m# stepDef.EtsyTitleVerification_StepDefinitions.user_sees_is_in_the_title(java.lang.String)?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 109.0.5414.25 (771113d280dd3dda2fb422a6c805f0eb2b8ee6ed-refs/branch-heads/5414@{#303}) on port 29957
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 04, 2023 6:18:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
